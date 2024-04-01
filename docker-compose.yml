@@ -3,7 +3,6 @@ version: "2"
 networks:
   ineuron:
     driver: bridge
-
 services:
   zookeeper:
     image: docker.io/bitnami/zookeeper:3.8
@@ -38,7 +37,6 @@ services:
       - "./pyspark_data:/project"
     networks:
       - ineuron
-
   cassandra:
     image: docker.io/bitnami/cassandra:4.1
     ports:
